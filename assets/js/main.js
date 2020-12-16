@@ -23,8 +23,8 @@ let app = new Vue({
         aggiungi : function(){
             this.tasks.push(this.task);
         },
-        elimina : function(i){
-          this.tasks.splice(i,1);  
+        elimina : function(index){
+            this.tasks.splice(index,1);  
         },
     }
 

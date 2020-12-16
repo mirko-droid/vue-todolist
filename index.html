@@ -17,8 +17,8 @@
         </form>
         <h2> <strong>Todo list</strong> </h2>
         <ul>
-            <li v-for="task in tasks"> {{ task }} <i class='fas fa-times' @click='elimina'></i> </li>
-         
+            <li v-for="(task, index) in tasks"> {{ task }}
+                <i class="fas fa-times-circle" @click='elimina(index)'></i> 
             
         </ul>
 
