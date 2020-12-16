@@ -16,8 +16,16 @@ let app = new Vue({
     el: '#root',
     data: {
         tasks: ['primoTask','secondoTask', 'terzoTask'],
-        icons: '<i class="fas fa-times-circle"></i>',
         image: './assets/img/logo.png',
+        task: '',
+    },
+    methods: {
+        aggiungi : function(){
+            this.tasks.push(this.task);
+        },
+        elimina : function(i){
+          this.tasks.splice(i,1);  
+        },
     }
 
 });
