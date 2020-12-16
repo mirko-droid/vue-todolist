@@ -11,7 +11,14 @@ body{
     align-items: center;
     justify-content: center;
 }
-
+li{
+    list-style: none;
+    height: 1rem;
+    background-color: white;
+    margin: 2px;
+    height: 2rem;
+    vertical-align: center;
+}
 
 #root > img{
     width: 150px;

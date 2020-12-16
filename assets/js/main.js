@@ -15,7 +15,8 @@ Consultate la documentazione e se siete bloccati, aprite un ticket. */
 let app = new Vue({
     el: '#root',
     data: {
-        tasks: ['primoTask ','secondoTask', 'terzoTask'],
+        tasks: ['primoTask','secondoTask', 'terzoTask'],
+        icons: '<i class="fas fa-times-circle"></i>',
         image: './assets/img/logo.png',
     }
 
