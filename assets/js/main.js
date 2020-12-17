@@ -21,7 +21,7 @@ let app = new Vue({
     },
     methods: {
         aggiungi : function(){
-            if(this.task.length > 3){
+            if(this.task.length >3){
                 return this.tasks.push(this.task);
             }
         },

@@ -12,7 +12,7 @@
     <div id="root">
         <img :src="image" alt="">
         <form action="">
-            <input type="text" v-model='task'>
+            <input type="text" v-model.trim='task'>
             <button type='button' @click='aggiungi()'>Add</button>
         </form>
         <h2 id='titolo_lista'> <strong>Todo list</strong> </h2>
