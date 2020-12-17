@@ -21,7 +21,9 @@ let app = new Vue({
     },
     methods: {
         aggiungi : function(){
-            this.tasks.push(this.task);
+            if(this.task.length > 3){
+                return this.tasks.push(this.task);
+            }
         },
         elimina : function(index){
             this.tasks.splice(index,1);  

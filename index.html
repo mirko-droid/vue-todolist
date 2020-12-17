@@ -13,14 +13,13 @@
         <img :src="image" alt="">
         <form action="">
             <input type="text" v-model='task'>
-            <button type='button' @click='aggiungi'>Add</button>
+            <button type='button' @click='aggiungi()'>Add</button>
         </form>
-        <h2> <strong>Todo list</strong> </h2>
+        <h2 id='titolo_lista'> <strong>Todo list</strong> </h2>
         <ul>
             <li v-for="(task, index) in tasks"> {{ task }}
-                <i class="fas fa-times-circle" @click='elimina(index)'></i> 
-            
-        </ul>
+                <i class="fas fa-times-circle" @click='elimina(index)'></i>
+            </ul>
 
     </div>
 
